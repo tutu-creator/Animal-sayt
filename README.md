@@ -126,9 +126,6 @@ Bütün server sorğuları tək bir faylda — `js/api.js` daxilində cəmlənmi
 
 ---
 
-
-
-
 ## ✨ Əsas Funksional Üstünlüklər
 
 1. **Mobil Prioritetli (Mobile-First) Responsive Dizayn:**
