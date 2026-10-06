@@ -204,3 +204,23 @@
     margin: 0 16px;
   }
 }
+
+
+/* Hamburger menyu düyməsi - tünd navbarda görünsün */
+.site-header .mobile-menu-btn {
+  color: #F3EFE7;
+}
+
+
+/* Mobil menyu - navbarla eyni tünd fon */
+@media (max-width: 1024px) {
+  .site-header .nav-menu {
+    background: #1A201C !important;
+    border-color: #28322C !important;
+  }
+
+  .site-header .nav-menu li,
+  .site-header .nav-link {
+    border-color: #28322C !important;
+  }
+}
