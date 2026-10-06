@@ -169,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: var(--bg-glass);
+  background-color: #1A201C;
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border-color);
@@ -230,7 +230,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-link {
   font-weight: 600;
   font-size: 0.98rem;
-  color: var(--text-muted);
+  color: #E2E8E4;
   padding: 8px 0;
   position: relative;
 }
@@ -1220,4 +1220,39 @@ h1, h2, h3, h4, h5, h6 {
 .modal-close-btn:hover {
   background: var(--bg-subtle);
   color: var(--text-main);
+}
+
+
+
+/* ===== PAWLY LOQO ===== */
+.brand-logo {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0;
+  gap: 10px;
+  color: #F3EFE7;
+}
+
+.logo-text-placeholder {
+  color: #F3EFE7;
+  background: none;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: #F3EFE7;
+}
+
+.logo-accent {
+  color: #F07257;
+  -webkit-text-fill-color: #F07257;
+}
+
+.logo-icon-wrap {
+  width: auto;
+  height: auto;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  color: #F07257;
+  font-size: 0.8em;
 }

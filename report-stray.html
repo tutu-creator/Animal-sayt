@@ -6,6 +6,10 @@
   <title>Sahibsiz Heyvan Bildir - [SAYT ADI]</title>
   <meta name="description" content="Küçədə gördüyünüz sahibsiz it və ya pişiyin şəklini və məkanını göndərin, qayğı göstərilməsinə və himayəyə kömək edin.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400..700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -14,16 +18,18 @@
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- ==================== HEADER (NAVİQASİYA) ==================== -->
   <header class="site-header">
     <div class="container nav-container">
-      <a href="index.html" class="brand-logo">
+      <!-- Loqo -->
+      <a href="index.html" class="brand-logo" id="header-brand-logo">
+        <span class="logo-text-placeholder">Pawl<span class="logo-accent">y</span></span>
         <span class="logo-icon-wrap"><i class="fa-solid fa-paw"></i></span>
-        <span class="logo-text-placeholder">[SAYT ADI]</span>
       </a>
 
+      <!-- Əsas Menyu -->
       <nav>
-        <ul class="nav-menu">
+        <ul class="nav-menu" id="primary-nav-menu">
           <li><a href="index.html" class="nav-link">Ana Səhifə</a></li>
           <li><a href="listings.html" class="nav-link">Bütün Elanlar</a></li>
           <li><a href="report-stray.html" class="nav-link active">Sahibsiz Heyvan</a></li>
@@ -33,11 +39,49 @@
         </ul>
       </nav>
 
+      <!-- Sağ Əməliyyat Düyməsi -->
       <div class="header-actions">
-        <a href="listings.html" class="btn btn-outline btn-sm">
-          <i class="fa-solid fa-list-ul"></i> Elanlara bax
-        </a>
-        <button type="button" class="mobile-menu-btn" aria-label="Menyunu aç">
+        <div class="post-action-wrap">
+          <button type="button" class="btn btn-primary btn-post-dropdown-toggle" id="btn-header-post">
+            <i class="fa-solid fa-plus"></i>
+            <span>Elan Yerləşdir</span>
+            <i class="fa-solid fa-chevron-down" style="font-size:0.75rem;margin-left:2px;"></i>
+          </button>
+          
+          <!-- Dropdown menyu -->
+          <div class="post-dropdown-menu">
+            <a href="report-stray.html" class="post-dropdown-item">
+              <div class="post-dropdown-icon" style="background:var(--accent-blue-light);color:var(--accent-blue);">
+                <i class="fa-solid fa-paw"></i>
+              </div>
+              <div class="post-dropdown-text">
+                <strong>Sahibsiz Heyvan Bildir</strong>
+                <span>Küçədə gördüyünüz it/pişiyi qeyd edin</span>
+              </div>
+            </a>
+            <a href="report-lost.html" class="post-dropdown-item">
+              <div class="post-dropdown-icon" style="background:var(--accent-amber-light);color:var(--accent-amber);">
+                <i class="fa-solid fa-bullhorn"></i>
+              </div>
+              <div class="post-dropdown-text">
+                <strong>İtmiş Heyvan Elanı Ver</strong>
+                <span>İtən ev heyvanınızı tez tapın</span>
+              </div>
+            </a>
+            <a href="report-needs-help.html" class="post-dropdown-item">
+              <div class="post-dropdown-icon" style="background:var(--primary-light);color:var(--primary);">
+                <i class="fa-solid fa-heart-pulse"></i>
+              </div>
+              <div class="post-dropdown-text">
+                <strong>Qayğıya Ehtiyacı Olan Heyvan</strong>
+                <span>Aclıq, susuzluq və ya müalicə üçün</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Mobil Menyu Açarı -->
+        <button type="button" class="mobile-menu-btn" id="mobile-toggle-btn" aria-label="Menyunu aç">
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
@@ -182,11 +226,80 @@
     </div>
   </main>
 
-  <!-- FOOTER -->
+  <!-- ==================== FOOTER ==================== -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-bottom" style="border:none;padding:0;text-align:center;">
-        <div>© 2026 [SAYT ADI]. Bütün hüquqlar qorunur. Küçə heyvanlarına şəfqətlə yanaşaq.</div>
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="margin-bottom:12px;">
+            <span style="color:#FAF3E8;">Pawl<span class="logo-accent">y</span></span>
+            <span class="logo-icon-wrap"><i class="fa-solid fa-paw"></i></span>
+          </a>
+          <p>
+            Azərbaycanda küçə heyvanlarının rifahını yaxşılaşdırmaq və itmiş ev heyvanlarının sahiblərinə qovuşmasını təmin etmək üçün yaradılmış qeyri-kommersiya təşəbbüsü.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#" class="social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Səhifələr</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Ana Səhifə</a></li>
+            <li><a href="listings.html">Bütün Elanlar</a></li>
+            <li><a href="about.html">Haqqımızda və Missiyamız</a></li>
+            <li><a href="about.html#faq-section">Tez-tez Verilən Suallar</a></li>
+            <li><a href="about.html#contact-section">Əlaqə & Könüllülük</a></li>
+          </ul>
+        </div>
+
+        <!-- Report Services -->
+        <div class="footer-col">
+          <h4>Bildirişlər</h4>
+          <ul class="footer-links">
+            <li><a href="report-stray.html">Sahibsiz Heyvan Bildir</a></li>
+            <li><a href="report-lost.html">İtmiş Ev Heyvanı Elanı</a></li>
+            <li><a href="report-needs-help.html">Qayğı Bildirişi</a></li>
+            <li><a href="listings.html?type=lost">İtmiş Heyvanlar Siyahısı</a></li>
+          </ul>
+        </div>
+
+        <!-- Əlaqə məlumatı -->
+        <div class="footer-col">
+          <h4>Əlaqə & Dəstək</h4>
+          <ul class="footer-contact-info">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Bakı şəhəri, Azərbaycan</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <span>info@[sayt-adi].az</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <span>+994 (50) 000-00-00</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              <span>24/7 Elan yerləşdirmə açıqdır</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Pawly. Bütün hüquqlar qorunur.</div>
+        <div style="display:flex;gap:20px;">
+          <a href="about.html">Məxfilik Siyasəti</a>
+          <a href="about.html">İstifadə Şərtləri</a>
+        </div>
       </div>
     </div>
   </footer>
