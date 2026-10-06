@@ -1,4 +1,4 @@
-# [SAYT ADI] - Sahibsiz və İtmiş Heyvanlara Dəstək Platforması (Frontend)
+# Pawly - Sahibsiz və İtmiş Heyvanlara Dəstək Platforması (Frontend)
 
 Azərbaycanda (Bakı və regionlarda) küçədə yaşayan sahibsiz it və pişiklərə kömək etmək, itmiş ev heyvanlarını ailələrinə qovuşdurmaq və qayğıya/qidalanmaya ehtiyacı olan heyvanları bildirmək üçün hazırlanmış müasir, responsiv və təmiz **Vanilla HTML, CSS və JavaScript** veb tətbiqi.
 
@@ -126,17 +126,8 @@ Bütün server sorğuları tək bir faylda — `js/api.js` daxilində cəmlənmi
 
 ---
 
-## 🏷️ Sayt Adının Dəyişdirilməsi
 
-Saytın adı sonradan təyin ediləcəyi üçün bütün kodlarda **`[SAYT ADI]`** vahid identifikatorundan istifadə edilmişdir.
-Ad qətiləşdikdə mətni asanlıqla dəyişə bilərsiniz:
-- HTML başlıqlarında: `<title>[SAYT ADI] - ...</title>`
-- Header loqosunda: `<span class="logo-text-placeholder">[SAYT ADI]</span>`
-- Footer hüquqlarında: `© 2026 [Pawly]`
 
-Layihə daxilində "Find & Replace" (Axtar və Əvəz et) edərək `[SAYT ADI]` ifadəsini istədiyiniz brend adı ilə dəyişməyiniz kifayətdir.
-
----
 
 ## ✨ Əsas Funksional Üstünlüklər
 
