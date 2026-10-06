@@ -132,7 +132,7 @@ Saytın adı sonradan təyin ediləcəyi üçün bütün kodlarda **`[SAYT ADI]`
 Ad qətiləşdikdə mətni asanlıqla dəyişə bilərsiniz:
 - HTML başlıqlarında: `<title>[SAYT ADI] - ...</title>`
 - Header loqosunda: `<span class="logo-text-placeholder">[SAYT ADI]</span>`
-- Footer hüquqlarında: `© 2026 [SAYT ADI]`
+- Footer hüquqlarında: `© 2026 [Pawly]`
 
 Layihə daxilində "Find & Replace" (Axtar və Əvəz et) edərək `[SAYT ADI]` ifadəsini istədiyiniz brend adı ilə dəyişməyiniz kifayətdir.
 
